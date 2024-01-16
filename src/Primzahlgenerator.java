@@ -1,5 +1,5 @@
 public class Primzahlgenerator {
-    public int startwert;
+    private int startwert;
 
     public Primzahlgenerator(int startwert) {
         this.startwert = startwert;
@@ -12,7 +12,7 @@ public class Primzahlgenerator {
         return startwert;
     }
 
-    public boolean istPrimzahl(int zahl) {
+    private boolean istPrimzahl(int zahl) {
         for (int teiler = 2; teiler < zahl; teiler++) {
             if (zahl % teiler == 0) return false;
         }
